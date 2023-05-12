@@ -13,6 +13,12 @@
 		8639E5FA2A0E8BB500DEB12D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8639E5F82A0E8BB500DEB12D /* Main.storyboard */; };
 		8639E5FC2A0E8BB600DEB12D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8639E5FB2A0E8BB600DEB12D /* Assets.xcassets */; };
 		8639E5FF2A0E8BB600DEB12D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8639E5FD2A0E8BB600DEB12D /* LaunchScreen.storyboard */; };
+		8639E6092A0E9AD600DEB12D /* PetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639E6082A0E9AD500DEB12D /* PetStore.swift */; };
+		8639E60B2A0E9B1300DEB12D /* Rabbits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639E60A2A0E9B1300DEB12D /* Rabbits.swift */; };
+		8639E60D2A0E9B2B00DEB12D /* Dogs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639E60C2A0E9B2B00DEB12D /* Dogs.swift */; };
+		8639E60F2A0E9C4900DEB12D /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639E60E2A0E9C4900DEB12D /* Database.swift */; };
+		8639E6112A0E9CF700DEB12D /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639E6102A0E9CF700DEB12D /* NetworkDataFetcher.swift */; };
+		8639E6132A0E9D1F00DEB12D /* LocalDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639E6122A0E9D1F00DEB12D /* LocalDataFetcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		8639E5FB2A0E8BB600DEB12D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8639E5FE2A0E8BB600DEB12D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8639E6002A0E8BB600DEB12D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8639E6082A0E9AD500DEB12D /* PetStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetStore.swift; sourceTree = "<group>"; };
+		8639E60A2A0E9B1300DEB12D /* Rabbits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rabbits.swift; sourceTree = "<group>"; };
+		8639E60C2A0E9B2B00DEB12D /* Dogs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dogs.swift; sourceTree = "<group>"; };
+		8639E60E2A0E9C4900DEB12D /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		8639E6102A0E9CF700DEB12D /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
+		8639E6122A0E9D1F00DEB12D /* LocalDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataFetcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		8639E5F12A0E8BB500DEB12D /* SOLID */ = {
 			isa = PBXGroup;
 			children = (
-				8639E5F22A0E8BB500DEB12D /* AppDelegate.swift */,
-				8639E5F42A0E8BB500DEB12D /* SceneDelegate.swift */,
-				8639E5F62A0E8BB500DEB12D /* ViewController.swift */,
+				8639E6142A0E9D7600DEB12D /* Data */,
+				8639E6152A0E9D8500DEB12D /* Pets */,
+				8639E6172A0E9DA300DEB12D /* Views */,
+				8639E6162A0E9D9200DEB12D /* Delegates */,
 				8639E5F82A0E8BB500DEB12D /* Main.storyboard */,
 				8639E5FB2A0E8BB600DEB12D /* Assets.xcassets */,
 				8639E5FD2A0E8BB600DEB12D /* LaunchScreen.storyboard */,
 				8639E6002A0E8BB600DEB12D /* Info.plist */,
 			);
 			path = SOLID;
+			sourceTree = "<group>";
+		};
+		8639E6142A0E9D7600DEB12D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8639E60E2A0E9C4900DEB12D /* Database.swift */,
+				8639E6102A0E9CF700DEB12D /* NetworkDataFetcher.swift */,
+				8639E6122A0E9D1F00DEB12D /* LocalDataFetcher.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8639E6152A0E9D8500DEB12D /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				8639E6082A0E9AD500DEB12D /* PetStore.swift */,
+				8639E60A2A0E9B1300DEB12D /* Rabbits.swift */,
+				8639E60C2A0E9B2B00DEB12D /* Dogs.swift */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
+		8639E6162A0E9D9200DEB12D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				8639E5F22A0E8BB500DEB12D /* AppDelegate.swift */,
+				8639E5F42A0E8BB500DEB12D /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		8639E6172A0E9DA300DEB12D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8639E5F62A0E8BB500DEB12D /* ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8639E6112A0E9CF700DEB12D /* NetworkDataFetcher.swift in Sources */,
+				8639E6132A0E9D1F00DEB12D /* LocalDataFetcher.swift in Sources */,
+				8639E60D2A0E9B2B00DEB12D /* Dogs.swift in Sources */,
+				8639E6092A0E9AD600DEB12D /* PetStore.swift in Sources */,
+				8639E60B2A0E9B1300DEB12D /* Rabbits.swift in Sources */,
 				8639E5F72A0E8BB500DEB12D /* ViewController.swift in Sources */,
 				8639E5F32A0E8BB500DEB12D /* AppDelegate.swift in Sources */,
+				8639E60F2A0E9C4900DEB12D /* Database.swift in Sources */,
 				8639E5F52A0E8BB500DEB12D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
